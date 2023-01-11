@@ -1,0 +1,84 @@
+<html>
+<title>Hidden Clicker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+<style>
+header{
+height:60px;
+background:#262626;
+padding:0 50px;
+float:up;
+}
+nav{
+width:68%;
+float:right;
+}
+nav ul{
+list-style:none;
+float:right;
+}
+nav ul li{
+display: inline-block;
+}
+nav ul li a{
+text-decoration: none;
+color:#fff;
+font-family:sans-serif;
+font-weight:bold;
+margin:0 10px;
+line-height:60px;
+text-transform:uppercase;
+}
+.logo{
+width:30%;
+float:left;
+color:#fff;
+font-wieght:bold;
+text-transform:uppercase;
+line-height:60px;
+font-size:35px;
+font-family:sans-serif;
+}
+</style>
+
+<header>
+<div class="logo">Logo</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Mountain-View WEB-ABOUT.html">About</a></li>
+<li><a href="Mountain-View WEB-CONTACT.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+</head>
+<body onbeforeunload="return closingCode()">
+  <link rel="stylesheet" href="style.css">
+    <script src="clicker.js"></script>
+  <div class='topbar'>
+  
+  </div>
+    <center class='center'>
+      <h1 id='total'>LB: 0</h1>
+      <h5 id="click" style="font-family:trebuchet MS;"></h5>
+      <img class="round" src="clicking.png" width="150" onclick='clicked()'></img>
+      <br><br>
+      <button id='upgrade' class="round" onclick='upgrade("upgrade")' style="font-family:courier;">0-main upgrade: 15</button>
+      <br><br>
+      <button id='cat' class="round" onclick='upgrade("clicker cat")' style="font-family:courier;">0-clicker cat: 25 | +1/sec</button>
+      <br><br>
+      <button id='worker' class="round" onclick='upgrade("worker")' style="font-family:courier;">0-worker: 250 | +15/sec</button><br><br>
+      <button class="settings" onclick="save()">Save</button>
+      <button class="settings" onclick="load()">Load</button>
+      <button class="settings" onclick="reset()">Reset</button><br><br>
+    </center>
+  </link>
+
+<footer>
+<center><h5><font color="red">Hello There</font></h5></center>
+</footer>
+</body>
+</meta>
+
+</html>
