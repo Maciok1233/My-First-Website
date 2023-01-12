@@ -40,7 +40,12 @@ font-size:35px;
 font-family:sans-serif;
 }
 </style>
+</head>
 
+<body onbeforeunload="return closingCode()">
+  <link rel="stylesheet" href="style.css">
+    <script src="clicker.js"></script>
+<div class='topbar'>
 <header>
 <div class="logo">Logo</div>
 
@@ -52,12 +57,6 @@ font-family:sans-serif;
 </ul>
 </nav>
 </header>
-</head>
-<body onbeforeunload="return closingCode()">
-  <link rel="stylesheet" href="style.css">
-    <script src="clicker.js"></script>
-  <div class='topbar'>
-  
   </div>
     <center class='center'>
       <h1 id='total'>LB: 0</h1>
